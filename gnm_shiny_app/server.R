@@ -8,7 +8,7 @@ server <- function(input, output, session) {
   # 
   place_names_file <- "www/place_names.csv"
   place_names      <- readr::read_csv(place_names_file)
-  place_names    %<>% dplyr::select(-date) %>% dplyr::rename(title = Title)
+  place_names$title <- 'Times'
   
   # Every place name was fed into google geo code. The file geo_data contains for every 'location' the current (english)
   # name, the type of location ('city', 'country' or 'administartive area') and the coordinates of its center {lat, lon}
