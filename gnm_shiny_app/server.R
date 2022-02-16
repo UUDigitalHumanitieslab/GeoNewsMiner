@@ -179,7 +179,8 @@ server <- function(input, output, session) {
                        occurrences = sum(freq),
                        # begin_year = min(year),                  # not used anaymore
                        # end_year =   max(year),
-                       n_titles =   n_distinct(title))
+                       n_titles =   n_distinct(title)
+                       )
     
     # normalized data (aka percentages)
     #
