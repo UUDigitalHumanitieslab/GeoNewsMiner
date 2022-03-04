@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  shiny:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: geonewsminer
+    environment:
+      - TZ=Europe/Amsterdam
+      - SHINY_LOG_LEVEL=WARN
+    volumes:
+      # Logs for individual Shiny apps. The shiny-server
+      # global log is written to stdout and is accessible
+      # via `docker logs geonewsminer`.
+      - shiny_logs:/var/log/shiny-server
+    ports:
+      - 3838:3838
+    restart: unless-stopped
+
+volumes:
+  shiny_logs:
