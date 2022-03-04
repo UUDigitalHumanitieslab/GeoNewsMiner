@@ -77,7 +77,7 @@ ui <- function(request) {
     
     # Application title
     #
-    titlePanel("The GeoNewsMiner (GNM), 1898 - 1920"),
+    titlePanel("The GeoNewsMiner (GNM), 1945 - 1954"),
      
     # Functions displaying modal boxes to show usage info about an input widget
     modal_data_values,

@@ -726,7 +726,7 @@ server <- function(input, output, session) {
     
     p <- p +
       coord_sf(label_axes = "----") +                 # suppress the graticules (meridians/parallels)
-      xlab("") + ylab("") + ggtitle("The GeoNewsMiner (GNM), 1898 - 1920")
+      xlab("") + ylab("") + ggtitle("The GeoNewsMiner (GNM), 1945 - 1954")
     return(p)
   })
   
